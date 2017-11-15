@@ -7,12 +7,13 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-
     "build": "node build/build.js"
   },
   "dependencies": {
+    "bulma": "^0.6.1",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuetify": "^0.17.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
