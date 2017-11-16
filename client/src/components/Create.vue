@@ -39,6 +39,7 @@
                     >Create</button>
             </p>
         </div>
+        <p>{{message}}</p>
   </div>
 </template>
 
@@ -50,7 +51,8 @@ export default {
         return {
             name: '',
             address: '',
-            category: ''
+            category: '',
+            message: ''
         }
     },
     methods: {
@@ -60,7 +62,10 @@ export default {
                 address: this.address,
                 category: this.category
             });
-            console.log(response.data);
+            this.message = response.data.message;
+            this.name = '';
+            this.address = '';
+            this.category = ''; 
         }
     }
 }
